@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::POST('/register','registerUserController@getUser');
 Route::GET('/post/{idUser}','servicesController@getPosts');
 //Route::POST('/register','registerUserController@register');
+Route::POST('/message','chatController@sendMessge');
